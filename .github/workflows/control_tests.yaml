@@ -1,18 +1,3 @@
-- name: Install pytest and flake8
-  run: |
-    pip install pytest
-    pip install flake8
-
-- name: Run tests
-  run: |
-    pytest
-
-- name: Run flake8
-  uses: py-actions/flake8@v2
-Avec le mot clé run, il suffit de lancer cette commande dans le shell Ubuntu sur l'instance. Pour utiliser flake8, vous devez utiliser un workflow déjà existant sur le marketplace github.
-
-Voici votre workflow final :
-
 name: Control Push
 on: push
 jobs:
